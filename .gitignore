@@ -1,0 +1,28 @@
+# Not for publication
+00_README_START_HERE.md
+01_Manuscript/
+08_Exploratory_NOT_used_in_paper/
+09_Progress_notes/
+10_Coauthor_feedback/
+11_Source_materials/
+06_Figures/*PROMPT*.md
+06_Figures/README_figure_briefs.md
+# Co-author working spreadsheets and third-party PDFs: review before adding
+02_Manual_coding/*.xlsx
+*.pdf
+~$*
+__pycache__/
+.env
+
+# Figures kept local
+06_Figures/
+07_Code/make_range_figures.py
+
+# Slimmed repo: paper-specific materials only
+05_Corpus_records/
+02_Manual_coding/
+04_Reliability/*.xlsx
+03_Machine_coding_v1.3_AUTHORITATIVE/*.xlsx
+07_Code/water_documents.py
+07_Code/verify_2022.py
+07_Code/recode_flagged.py

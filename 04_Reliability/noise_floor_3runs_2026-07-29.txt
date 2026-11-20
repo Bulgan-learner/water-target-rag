@@ -1,0 +1,45 @@
+Noise-floor analysis, 2026-07-29
+Config: harmonised/v1.3-multilingual-multiquery-community | prompt water-target-coder/v1.1 | model claude-opus-4-8
+BASE = verified/adjudicated dataset; A and B = independent replicate runs, identical config
+Replicate cost: run A $2.1679 (run_id harmonised-69eb9c62), run B $2.1742 (run_id harmonised-6b9baded)
+
+comparable company-years: 47
+
+== CATEGORY STABILITY (all 47 company-years) ==
+identical across all 3 runs : 38/47 = 80.9%
+A vs B agree               : 42/47 = 89.4%
+A vs BASE agree            : 41/47 = 87.2%
+B vs BASE agree            : 39/47 = 83.0%
+
+-- company-years that moved (BASE / A / B) --
+  African Rainbow Minerals  2022  2 / 2 / 1
+  African Rainbow Minerals  2025  2 / 2 / 1
+  Alcoa                     2025  2 / 1 / 1
+  Anglo American            2025  2 / 1 / 3
+  AngloGold Ashanti         2025  4 / 3 / 3
+  Freeport-McMoRan          2022  3 / 4 / 4
+  Freeport-McMoRan          2025  4 / 4 / 3
+  Glencore                  2022  3 / 1 / 3
+  Minsur                    2022  4 / 1 / 1
+
+== PAIRED COMPANIES: 22 ==
+BASE: 2022 {'1': 3, '2': 8, '3': 3, '4': 8}  2025 {'1': 6, '2': 7, '3': 1, '4': 8}  CHANGED 15/22 = 68.2%
+A: 2022 {'1': 5, '2': 8, '3': 1, '4': 8}  2025 {'1': 8, '2': 5, '3': 2, '4': 7}  CHANGED 13/22 = 59.1%
+B: 2022 {'1': 5, '2': 7, '3': 2, '4': 8}  2025 {'1': 8, '2': 4, '3': 4, '4': 6}  CHANGED 15/22 = 68.2%
+
+== ORIENTATION COUNTS (companies with tag), paired only ==
+orientation              BASE22 BASE25    A22    A25    B22    B25
+community_access              0      2      1      3      0      2
+discharge_reduction           0      1      0      1      0      1
+efficiency                    5      9      6     10      5      9
+none                          8      7      8      4      8      4
+recycling_reuse               3      5      3      4      3      3
+source_substitution           4      3      3      4      3      4
+stewardship_catchment_context     10     10      7     11      8     12
+water_quality                 2      1      3      1      4      1
+withdrawal_reduction          8      4      8      4      8      5
+
+== OTHER MEASURES (all comparable company-years) ==
+BASE: targets=56  cat3=5  community_access=2  baseline_year=10
+A: targets=55  cat3=4  community_access=4  baseline_year=13
+B: targets=57  cat3=7  community_access=2  baseline_year=12
